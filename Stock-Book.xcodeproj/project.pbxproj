@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BC84E09B233E7A5E00DFA15B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84E09A233E7A5E00DFA15B /* Constants.swift */; };
+		BCA1BF03234D22F6002A66FC /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA1BF02234D22F6002A66FC /* BookView.swift */; };
 		BCA41774234BFBD30030A599 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA41773234BFBD30030A599 /* Service.swift */; };
 		BCE70D36233CCFC800CDE6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE70D35233CCFC800CDE6B7 /* AppDelegate.swift */; };
 		BCE70D38233CCFC800CDE6B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE70D37233CCFC800CDE6B7 /* SceneDelegate.swift */; };
-		BCE70D3A233CCFC800CDE6B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE70D39233CCFC800CDE6B7 /* ContentView.swift */; };
+		BCE70D3A233CCFC800CDE6B7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE70D39233CCFC800CDE6B7 /* SearchView.swift */; };
 		BCE70D3C233CCFC900CDE6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE70D3B233CCFC900CDE6B7 /* Assets.xcassets */; };
 		BCE70D3F233CCFC900CDE6B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE70D3E233CCFC900CDE6B7 /* Preview Assets.xcassets */; };
 		BCE70D42233CCFC900CDE6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE70D40233CCFC900CDE6B7 /* LaunchScreen.storyboard */; };
@@ -38,11 +39,12 @@
 
 /* Begin PBXFileReference section */
 		BC84E09A233E7A5E00DFA15B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCA1BF02234D22F6002A66FC /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		BCA41773234BFBD30030A599 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BCE70D32233CCFC800CDE6B7 /* Stock-Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock-Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE70D35233CCFC800CDE6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE70D37233CCFC800CDE6B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCE70D39233CCFC800CDE6B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCE70D39233CCFC800CDE6B7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BCE70D3B233CCFC900CDE6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE70D3E233CCFC900CDE6B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCE70D41233CCFC900CDE6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,7 +93,8 @@
 		BCA1BEFE234CFC44002A66FC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BCE70D39233CCFC800CDE6B7 /* ContentView.swift */,
+				BCE70D39233CCFC800CDE6B7 /* SearchView.swift */,
+				BCA1BF02234D22F6002A66FC /* BookView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,7 +310,8 @@
 			files = (
 				BCE70D36233CCFC800CDE6B7 /* AppDelegate.swift in Sources */,
 				BCE70D38233CCFC800CDE6B7 /* SceneDelegate.swift in Sources */,
-				BCE70D3A233CCFC800CDE6B7 /* ContentView.swift in Sources */,
+				BCE70D3A233CCFC800CDE6B7 /* SearchView.swift in Sources */,
+				BCA1BF03234D22F6002A66FC /* BookView.swift in Sources */,
 				BC84E09B233E7A5E00DFA15B /* Constants.swift in Sources */,
 				BCA41774234BFBD30030A599 /* Service.swift in Sources */,
 			);
