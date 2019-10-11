@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct SearchView: View {
+    
+    let service = Service.sharedInstance
 
-   @State var selection: Int? = nil
+    @State var selection: Int? = nil
     
     var body: some View {
         
@@ -23,9 +25,8 @@ struct SearchView: View {
                          }
                 
                 Button("Search"){
-                    Service.sharedInstance.quoteArray.removeAll()
-                    Service.sharedInstance.bookRequest{
-                        print(Service.sharedInstance.quoteArray)
+                    self.service.bookRequest{
+                        print(self.service.tradeArray)
                         self.selection = 1
                     }
                 }
