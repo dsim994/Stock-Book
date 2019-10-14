@@ -13,17 +13,11 @@ struct BookView: View {
     let quote = Service.sharedInstance.quoteArray
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
-//                Text("\(quote[0].iexRealtimePrice)")
-                
                 List() {
                     TradeRowView()
                 }
-                
             }
         }.navigationBarTitle(Text("\(quote[0].companyName)"), displayMode: .inline)
     }

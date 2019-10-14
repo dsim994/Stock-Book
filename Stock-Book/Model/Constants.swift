@@ -13,7 +13,7 @@ struct Book: Identifiable, Decodable {
     let quote: Quote
     let bids: [Bids]
     let asks: [Asks]
-    let trades: [Trades]?
+    let trades: [Trades]
 }
 
 struct Quote: Decodable {

@@ -10,18 +10,34 @@ import SwiftUI
 
 struct TradeRowView: View {
     
-    let trades = Service.sharedInstance.tradeArray.flatMap{ $0.map { $0.self }}
-
+//    var trade: Trades
+    
+    
     var body: some View {
-        VStack{
-            HStack {
-                Text("Hello World")
-//                Text("\(trades[0].price)")
-//                Spacer()
-//                Text("\(trades[0].size)")
-//                Spacer()
-//                Text("\(trades[0].tradeId)")
-            }
+        HStack {
+            Text("Hello World")
+            
+        
+            
+//            Text("\(trade.price)")
+//            .font(.body)
+//            .fontWeight(.bold)
+//            .minimumScaleFactor(0.5)
+//
+//            Spacer()
+//
+//            Text("\(trade.size)")
+//            .font(.body)
+//            .fontWeight(.bold)
+//            .minimumScaleFactor(0.5)
+//
+//            Spacer()
+//
+//            Text("\(trade.tradeId)")
+//            .font(.body)
+//            .fontWeight(.bold)
+//            .minimumScaleFactor(0.5)
+//
         }
     }
 }
