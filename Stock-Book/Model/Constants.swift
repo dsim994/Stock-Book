@@ -8,17 +8,18 @@
 
 import Foundation
 
-struct Book: Decodable {
+struct Book: Identifiable, Decodable {
+    let id = UUID()
     let quote: Quote
     let bids: [Bids]
     let asks: [Asks]
-    let trades: [Trades]
+    let trades: [Trades]?
 }
 
 struct Quote: Decodable {
     let symbol: String
     let companyName: String
-    let iexRealtimePrice: Double
+    let iexRealtimePrice: Double?
     let isUSMarketOpen: Bool
 }
 

@@ -11,7 +11,6 @@ import SwiftUI
 struct BookView: View {
     
     let quote = Service.sharedInstance.quoteArray
-    let trades = Service.sharedInstance.tradeArray.flatMap{ $0.map { $0.self }}
     
     var body: some View {
         
@@ -19,26 +18,12 @@ struct BookView: View {
             
             VStack {
                 
-                Text("\(quote[0].symbol)")
+//                Text("\(quote[0].iexRealtimePrice)")
                 
                 List() {
-                    
-                    HStack {
-                        Text("Trade Price")
-                        Spacer()
-                        Text("Trade Size")
-                        Spacer()
-                        Text("Trade ID")
-                    }
-                    
-                    HStack {
-                        Text("\(trades[0].price)")
-                        Spacer()
-                        Text("\(trades[0].size)")
-                        Spacer()
-                        Text("\(trades[0].tradeId)")
-                    }
+                    TradeRowView()
                 }
+                
             }
         }.navigationBarTitle(Text("\(quote[0].companyName)"), displayMode: .inline)
     }

@@ -26,7 +26,6 @@ struct SearchView: View {
                 
                 Button("Search"){
                     self.service.bookRequest{
-                        print(self.service.tradeArray)
                         self.selection = 1
                     }
                 }
