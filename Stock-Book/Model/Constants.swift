@@ -35,7 +35,8 @@ struct Asks: Decodable {
     let timestamp: Double
 }
 
-struct Trades: Decodable {
+struct Trades: Identifiable, Decodable {
+    let id = UUID()
     let price: Double
     let size: Double
     let tradeId: Double

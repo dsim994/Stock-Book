@@ -46,41 +46,20 @@ final class Service {
                 fatalError("Error: missing response data")
             }
             
-            
             do {
                 
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let fetchedBook = try decoder.decode(Book.self, from: data)
-                
+        
                 self.quoteArray.append(fetchedBook.quote)
                 self.bidArray.append(fetchedBook.bids)
                 self.askArray.append(fetchedBook.asks)
-                
-                
-                
-               
-                
-                let trades = fetchedBook.trades.compactMap{ $0.self }.compactMap { $0 }
-                print(trades)
-                
-                self.tradeArray.append(trades)
+                self.tradeArray.append(fetchedBook.trades)
                 print(self.tradeArray)
                 
-//                if fetchedBook.trades == nil {
-//                    print("Trade data is null")
-//                } else {
-//                self.tradeArray.append(fetchedBook.trades.compactMap{ $0.self }.compactMap { $0 })
-//                }
-
-//                print(self.quoteArray.map {$0.self })
-//                print(self.bidArray.map { $0.self }.flatMap { $0 })
-//                print(self.askArray.map { $0.self }.flatMap { $0 })
-
-                                
                 completion()
             }
-                
                 
             catch {
                 print("Error \(error.localizedDescription)")

@@ -15,8 +15,9 @@ struct BookView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List() {
-                    TradeRowView()
+                List(mappedTrades) {
+                    trades in
+                    TradeRowView(trade: trades)
                 }
             }
         }.navigationBarTitle(Text("\(quote[0].companyName)"), displayMode: .inline)
